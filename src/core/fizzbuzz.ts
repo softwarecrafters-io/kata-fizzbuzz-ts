@@ -3,5 +3,5 @@ export const fizzbuzz = (n) => {
 	if (n === 5) return 'buzz';
 	if (n === 15) return 'fizzbuzz';
 
-	return 0;
+	return 1;
 };
