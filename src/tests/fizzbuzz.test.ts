@@ -1,8 +1,12 @@
 import { fizzbuzz } from '../core/fizzbuzz';
 
-test('should get zero when recieves zero', () => {
-	const result = fizzbuzz(0);
-	const expected = 0;
+test('fizzbuzz should', () => {
+	const testCases = [
+		{ value: 0, expect: 0 },
+		{ value: 3, expect: 'fizz' },
+		{ value: 5, expect: 'buzz' },
+		{ value: 15, expect: 'fizzbuzz' },
+	];
 
-	expect(result).toBe(expected);
+	testCases.forEach((testCase) => expect(fizzbuzz(testCase.value)).toBe(testCase.expect));
 });
