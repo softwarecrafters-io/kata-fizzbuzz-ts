@@ -1,1 +1,1 @@
-export const fizzbuzz = (n) => n;
+export const fizzbuzz = (n) => 0;

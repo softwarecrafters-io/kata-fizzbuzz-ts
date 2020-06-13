@@ -6,3 +6,10 @@ test('should get zero when recieves zero', () => {
 
 	expect(result).toBe(expected);
 });
+
+test('should get fizz when recieves three', () => {
+	const result = fizzbuzz(3);
+	const expected = 'fizz';
+
+	expect(result).toBe(expected);
+});
