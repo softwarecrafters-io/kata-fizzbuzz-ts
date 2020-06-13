@@ -1,7 +1,7 @@
 export const fizzbuzz = (n) => {
-	if (n === 3) return 'fizz';
-	if (n === 5) return 'buzz';
-	if (n === 15) return 'fizzbuzz';
+	if (n % 15 == 0) return 'fizzbuzz';
+	if (n % 3 == 0) return 'fizz';
+	if (n % 5 == 0) return 'buzz';
 
-	return 0;
+	return n;
 };
